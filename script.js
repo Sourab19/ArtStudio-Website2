@@ -11,8 +11,9 @@ function regExVal() {
     em.style.border = "2px solid black";
     return true;
   } else {
-    err1.innerText = "email is invalid";
+    err1.innerText = "Email is invalid";
     em.style.border = "2px solid red";
+    err1.style.color = "red";
 
     return false;
   }
@@ -28,6 +29,7 @@ function number() {
   } else {
     err2.innerText = "Number is invalid";
     no.style.border = "2px solid red";
+    err2.style.color = "red";
 
     return false;
   }
