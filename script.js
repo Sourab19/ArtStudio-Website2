@@ -39,7 +39,7 @@ function validatePassword() {
   const err3 = document.getElementById("err3");
 
   // Regex to match at least one uppercase, one lowercase, and one number
-  const strongRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+  const strongRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d\S]{8,}$/;
 
   if (strongRegex.test(password)) {
     // Check if password length is greater than or equal to 8
